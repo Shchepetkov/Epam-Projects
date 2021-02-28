@@ -10,6 +10,7 @@ namespace Epam.Task_1.Task_1_2
    {
       public void m()
       {
+         Console.WriteLine("\t Averages");
          Console.Write("Введите предложение: ");
          string Input = Console.ReadLine();
          StringBuilder StringBuilder = new StringBuilder();
@@ -34,7 +35,8 @@ namespace Epam.Task_1.Task_1_2
             LengthWords += Word.Length;
          }
          Console.WriteLine("Средняя длина слова = " + LengthWords / CountWord); // Результат целый
-
+         Console.WriteLine("Нажмите любую клавишу");
+         Console.ReadKey();
       }
    }
 }

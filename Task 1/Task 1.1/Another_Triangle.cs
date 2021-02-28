@@ -7,10 +7,15 @@ namespace Epam.Task_1.Task_1_1
 {
    public class Another_Triangle
    {
-      public void m(int n)
+      public void m()
       {
-         for (int i = 0; i < n; i++)
-            Console.WriteLine("".PadLeft(1 + i * 2, '*').PadLeft(n + i, ' '));
+         Console.WriteLine("\t Another Triangle");
+         Console.Write("Введите число ступеней: ");
+         int count = Convert.ToInt32(Console.ReadLine());
+         for (int i = 0; i < count; i++)
+            Console.WriteLine("".PadLeft(1 + i * 2, '*').PadLeft(count + i, ' '));
+         Console.WriteLine("Нажмите любую клавишу");
+         Console.ReadKey();
       }
    }
 }

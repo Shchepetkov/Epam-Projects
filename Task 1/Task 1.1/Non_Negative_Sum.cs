@@ -9,6 +9,8 @@ namespace Epam.Task_1.Task_1_1
    {
       public void m()
       {
+         Console.WriteLine("\t Non Negative Sum");
+
          int n, summa = 0;
          Console.Write("ввидите число n(размер массива): ");
          n = Int32.Parse(Console.ReadLine());
@@ -26,6 +28,8 @@ namespace Epam.Task_1.Task_1_1
             }
          }
          Console.WriteLine("Сумма неотрицательных элементов : " + summa);
+         Console.WriteLine("Нажмите любую клавишу");
+         Console.ReadKey();
       }
    }
 }

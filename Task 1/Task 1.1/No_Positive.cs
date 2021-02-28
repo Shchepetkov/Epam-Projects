@@ -9,6 +9,8 @@ namespace Epam.Task_1.Task_1_1
    {
       public void m()
       {
+         Console.WriteLine("\t No Positive");
+
          int[,,] array = { { { 1, 2, 3 }, { -4, 5, 6 } } };
          for (int i = 0; i < array.GetLength(0); i++)
          {
@@ -28,6 +30,8 @@ namespace Epam.Task_1.Task_1_1
                }
             }
          }
+         Console.WriteLine("Нажмите любую клавишу");
+         Console.ReadKey();
       }
    }
 }

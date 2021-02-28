@@ -7,12 +7,16 @@ namespace Epam.Task_1.Task_1_1
 {
    public class Font_Adjustment
    {
-      public void m(int n)
+      public void m()
       {
+
+         Console.WriteLine("\t Font Adjustment");
+         int count = Convert.ToInt32(Console.ReadLine());
+
          List<string> list = new List<string>();
          do
          {
-            switch (n)
+            switch (count)
             {
                case 1:
                   if (list.Contains("Bold")) list.Remove("Bold");
@@ -40,8 +44,9 @@ namespace Epam.Task_1.Task_1_1
                   break;
             }
          }
-         while (int.TryParse(Console.ReadLine(), out n));
-
+         while (int.TryParse(Console.ReadLine(), out count));
+         Console.WriteLine("Нажмите любую клавишу");
+         Console.ReadKey();
       }
    }
 }

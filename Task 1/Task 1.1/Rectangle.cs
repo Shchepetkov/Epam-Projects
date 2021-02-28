@@ -14,6 +14,7 @@ namespace Epam.Task_1.Task_1_1
          bool repeat = true;
          while (repeat)
          {
+            Console.WriteLine("\t Rectangle");
             do
             {
                Console.Write("A = ");
@@ -33,6 +34,8 @@ namespace Epam.Task_1.Task_1_1
             //    continue;
             // }
             Console.WriteLine("А: {0}, В: {1}, Площадь: {2}", a, b, a * b);
+            Console.WriteLine("Нажмите любую клавишу");
+            Console.ReadKey();
             repeat = false;
          }
       }

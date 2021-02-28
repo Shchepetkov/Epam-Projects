@@ -9,6 +9,7 @@ namespace Epam.Task_1.Task_1_1
    {
       public void m()
       {
+         Console.WriteLine("\t Sum OF Numbers");
          int sum = 0;
          for (int i = 0; i < 1000; i++)
          {
@@ -17,7 +18,9 @@ namespace Epam.Task_1.Task_1_1
                sum += i;
             }
          }
-         System.Console.WriteLine(sum);
+         Console.WriteLine(sum);
+         Console.WriteLine("Нажмите любую клавишу");
+         Console.ReadKey();
       }
    }
 }

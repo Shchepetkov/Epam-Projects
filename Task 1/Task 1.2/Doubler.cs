@@ -10,9 +10,10 @@ namespace Epam.Task_1.Task_1_2
    {
       public void m()
       {
-			Console.Write("Введите предложение: ");
+         Console.WriteLine("\t Doubler");
+         Console.Write("Введите предложение: ");
          string strInput = Console.ReadLine();
-			Console.Write("Введите буквы которые хотите удвоить: ");
+         Console.Write("Введите буквы которые хотите удвоить: ");
          string addLetter = Console.ReadLine();
          StringBuilder StringBuilder = new StringBuilder();
 
@@ -27,6 +28,8 @@ namespace Epam.Task_1.Task_1_2
                StringBuilder.Append(symbol);
          }
          Console.WriteLine("Результат: " + StringBuilder.ToString());
+         Console.WriteLine("Нажмите любую клавишу");
+         Console.ReadKey();
       }
    }
 }

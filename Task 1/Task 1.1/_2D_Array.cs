@@ -9,6 +9,8 @@ namespace Epam.Task_1.Task_1_1
    {
       public void m()
       {
+         Console.WriteLine("\t 2D Array");
+
          Console.Write("Введите размерность массива: ");
          int size = int.Parse(Console.ReadLine());
          int[,] array = new int[size, size];
@@ -34,6 +36,8 @@ namespace Epam.Task_1.Task_1_1
             }
          }
          Console.WriteLine("Сумма : " + Sum);
+         Console.WriteLine("Нажмите любую клавишу");
+         Console.ReadKey();
       }
    }
 }

@@ -54,6 +54,7 @@ namespace Epam.Task_1.Task_1_1
       }
       public void m()
       {
+         Console.WriteLine("\t Array Processing");
          Random rnd = new Random();
          int syze = rnd.Next(5, 20);
          int[] ar = new int[syze];
@@ -88,8 +89,9 @@ namespace Epam.Task_1.Task_1_1
                max = ar[i];
             }
          }
-         System.Console.WriteLine("Максимальный элемент массива: " + max + " " + "Минимальный элемент массива: " + min);
-
+         Console.WriteLine("Максимальный элемент массива: " + max + " " + "Минимальный элемент массива: " + min);
+         Console.WriteLine("Нажмите любую клавишу");
+         Console.ReadKey();
       }
    }
 }
