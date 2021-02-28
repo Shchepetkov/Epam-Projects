@@ -10,7 +10,7 @@
          "request": "launch",
          "preLaunchTask": "build",
          // If you have changed target frameworks, make sure to update the program path.
-         "program": "${workspaceFolder}/Task 1/Task 1.1/bin/Debug/net5.0/Epam.dll",
+         "program": "${workspaceFolder}/Task 1/Task 1.2/bin/Debug/net5.0/Epam.dll",
          "args": [],
          "cwd": "${workspaceFolder}/Task 1/Task 1.1",
          // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console

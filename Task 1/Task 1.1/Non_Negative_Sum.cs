@@ -25,7 +25,7 @@ namespace Epam.Task_1.Task_1_1
                summa += x[i];
             }
          }
-         Console.WriteLine("Сумма отрицательных элементов : " + summa);
+         Console.WriteLine("Сумма неотрицательных элементов : " + summa);
       }
    }
 }
