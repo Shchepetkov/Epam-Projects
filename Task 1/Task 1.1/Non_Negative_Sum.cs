@@ -12,10 +12,11 @@ namespace Epam.Task_1.Task_1_1
          Console.WriteLine("\t Non Negative Sum");
 
          int n, summa = 0;
-         Console.Write("ввидите число n(размер массива): ");
+         Console.Write("Введите число n(размер массива): ");
          n = Int32.Parse(Console.ReadLine());
          int[] x = new int[n];
-         Console.WriteLine("Ввидите элементы массива: ");
+         Console.WriteLine("Введите элементы массива: ");
+         
          for (int i = 0; i < n; i++)
          {
             x[i] = int.Parse(Console.ReadLine());

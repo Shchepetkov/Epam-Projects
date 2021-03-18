@@ -18,7 +18,7 @@ namespace Epam.Task_1.Task_1_1
             {
                Console.Write("*");
             }
-            Console.Write("\n");
+            Console.WriteLine();
          }
          Console.WriteLine("Нажмите любую клавишу");
          Console.ReadKey();
