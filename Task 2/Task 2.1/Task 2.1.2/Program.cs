@@ -9,14 +9,7 @@ namespace Epam.Task_2.Task_2_1.Task_2_1_2
    {
       static void Main(string[] args)
       {
-
-         while (true)
-         {
-            Console.WriteLine("Выберите действие:" + Environment.NewLine + "1.Добавить фигуру" + Environment.NewLine
-                            + "2.Вывести фигуры" + Environment.NewLine + "3.Очистить поле" + Environment.NewLine
-                            + "4.Выход" + Environment.NewLine);
-            new Menu().Action();
-         }
+         new Menu().Action();
       }
    }
 }
