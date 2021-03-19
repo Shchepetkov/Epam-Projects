@@ -7,7 +7,7 @@ namespace Epam.Task_1.Task_1_1
 {
    public class Font_Adjustment
    {
-      public void m()
+      public void Action()
       {
 
          Console.WriteLine("\t Font Adjustment");

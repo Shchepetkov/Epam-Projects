@@ -52,7 +52,7 @@ namespace Epam.Task_1.Task_1_1
       {
          return QuickSort(array, 0, array.Length - 1);
       }
-      public void m()
+      public void Action()
       {
          Console.WriteLine("\t Array Processing");
          Random rnd = new Random();

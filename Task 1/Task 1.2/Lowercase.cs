@@ -7,7 +7,7 @@ namespace Epam.Task_1.Task_1_2
 {
    public class Lowercase
    {
-      public void m()
+      public void Action()
       {
          Console.WriteLine("\t Lowercase");
          Console.Write("Введите предложение: ");

@@ -7,7 +7,7 @@ namespace Epam.Task_1.Task_1_1
 {
    public class Non_Negative_Sum
    {
-      public void m()
+      public void Action()
       {
          Console.WriteLine("\t Non Negative Sum");
 

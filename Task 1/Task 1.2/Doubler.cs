@@ -8,7 +8,7 @@ namespace Epam.Task_1.Task_1_2
 {
    public class Doubler
    {
-      public void m()
+      public void Action()
       {
          Console.WriteLine("\t Doubler");
          Console.Write("Введите предложение: ");

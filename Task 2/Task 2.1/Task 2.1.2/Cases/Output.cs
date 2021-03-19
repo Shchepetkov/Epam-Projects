@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Epam.Task_2.Task_2_1.Task_2_1_2.Cases
 {
-   public class Case2
+   public class Output
    {
       public void Action(ListFigures activeList)
       {

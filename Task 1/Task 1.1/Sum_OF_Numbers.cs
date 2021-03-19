@@ -7,7 +7,7 @@ namespace Epam.Task_1.Task_1_1
 {
    public class Sum_OF_Numbers
    {
-      public void m()
+      public void Action()
       {
          Console.WriteLine("\t Sum OF Numbers");
          int sum = 0;

@@ -7,7 +7,7 @@ namespace Epam.Task_1.Task_1_1
 {
    public class X_Mas_Tree
    {
-      public void m()
+      public void Action()
       {
          Console.WriteLine("\t X-Mas Tree");
          Console.Write("Введите число треугольников: ");

@@ -7,7 +7,7 @@ namespace Epam.Task_1.Task_1_1
 {
    public class _2D_Array
    {
-      public void m()
+      public void Action()
       {
          Console.WriteLine("\t 2D Array");
 
