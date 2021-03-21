@@ -10,15 +10,24 @@ namespace Epam_Projects.Task01
    {
       private char[] charStd;
 
-      //   public static bool operator ==(MyStringBuilder obj1, MyStringBuilder obj2)
-      //   {
-      //       return obj1.Equals(obj2);
-      //   }
-      
-      //   public static bool operator !=(MyStringBuilder obj1, MyStringBuilder obj2)
-      //   {
-      //       return !obj1.Equals(obj2);
-      //   }
+      public static bool operator ==(MyStringBuilder obj1, MyStringBuilder obj2)
+      {
+         return obj1.Equals(obj2);
+      }
+
+      public static bool operator !=(MyStringBuilder obj1, MyStringBuilder obj2)
+      {
+         return !obj1.Equals(obj2);
+      }
+
+      public override bool Equals(object obj)
+      {
+         if (obj is MyStringBuilder)
+            {
+                return Equals(obj as MyStringBuilder);
+            }
+            return false;
+      }
 
       public MyStringBuilder(char[] ar)
       {
@@ -29,11 +38,11 @@ namespace Epam_Projects.Task01
          }
       }
 
-     public MyStringBuilder MyConcat2(char[] array1, char[] array2)
-        {
-            charStd = MyAppend(array1).Concat(MyAppend(array2)).ToArray();
-            return this;
-        }
+      public MyStringBuilder MyConcat2(char[] array1, char[] array2)
+      {
+         charStd = MyAppend(array1).Concat(MyAppend(array2)).ToArray();
+         return this;
+      }
 
       public char[] MyAppend(char[] ar)
       {
@@ -52,10 +61,10 @@ namespace Epam_Projects.Task01
       }
 
       public char[] FromCharArray(char[] array)
-        {
-            charStd = array;
-            return array;
-        }
+      {
+         charStd = array;
+         return array;
+      }
 
       public int Find(char chars) => Array.IndexOf(charStd, chars);
    }

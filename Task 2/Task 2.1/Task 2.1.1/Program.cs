@@ -10,6 +10,9 @@ namespace Epam_Projects
       {
          char[] r = Console.ReadLine().ToCharArray(); 
          MyStringBuilder a = new MyStringBuilder(r);
+         MyStringBuilder b = new MyStringBuilder("ssws".ToCharArray());
+         Console.WriteLine(a == b);
+         Console.WriteLine(a != b);
          Console.WriteLine(a.MyAppend("Maksim".ToCharArray()));
          Console.WriteLine(a.MyCompare("saa".ToCharArray()));
          Console.WriteLine(a.Find('t'));
