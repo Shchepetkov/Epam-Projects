@@ -25,7 +25,6 @@ namespace game.Canvas
          {
             snake.Move();
 
-
             if (Console.KeyAvailable)
             {
                ConsoleKeyInfo key = Console.ReadKey();
