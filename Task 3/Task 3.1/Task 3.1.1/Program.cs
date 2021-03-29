@@ -24,7 +24,6 @@ namespace Epam
             Round++;
          }
          Console.WriteLine(List.First.Value);
-         // currentItem.Value - элементы которые удалили
       }
    }
 }
