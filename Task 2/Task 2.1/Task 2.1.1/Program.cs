@@ -17,7 +17,7 @@ namespace Epam_Projects
          Console.WriteLine(a.MyCompare("saa".ToCharArray()));
          Console.WriteLine(a.Find('t'));
          Console.WriteLine(a.ConvertToCharArr());
-
+             
          Console.WriteLine(a.MyConcat2("wdxwd".ToCharArray(), "dse3d3e".ToCharArray()));
 
       }
