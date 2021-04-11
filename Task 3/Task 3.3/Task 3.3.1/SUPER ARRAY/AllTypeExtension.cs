@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -65,26 +66,45 @@ namespace Task_3._3
 
         }
 
-        public static int Sum(this int[] array)
+        public void M<T>(this IEnumerable<T>) 
         {
-            int sum = 0;
-
-            for (int i = 0; i < array.Length; i++)
-            {
-                sum += array[i];
-            }
-
-            return sum;
         }
 
-        public static void Partition(this int[] array, Func<int, int> compare)
+        public static T Sum<T>(this T[] array) where T : unmanaged
         {
+            var converter = TypeDescriptor.GetConverter(typeof(T));
+
+            if (converter.CanConvertFrom(typeof(int)))
+            {
+                int sum = 0;
+                
+                for (int i = 0; i < array.Length; i++)
+                {
+                    int[] result = (int[])converter.ConvertFrom(array);
+                    sum += result[i];
+                }
+                sum = default(int);
+                return sum;
+            }
+
             for (int i = 0; i < array.Length; i++)
             {
-                array[i] = compare(array[i]);
-                Console.WriteLine(array[i]);
+                converter += array[i];
             }
-  
+
+            return (T)converter;
+        }
+
+        public static void Partition<T>(this T[] array, Func<T, T> compare)
+        {
+            if (compare != null)
+            {
+                for (int i = 0; i < array.Length; i++)
+                {
+                    array[i] = compare(array[i]);
+                    Console.WriteLine(array[i]);
+                }
+            }
         }
 
     }
