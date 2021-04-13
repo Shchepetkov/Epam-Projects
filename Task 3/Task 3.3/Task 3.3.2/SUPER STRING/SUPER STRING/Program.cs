@@ -6,7 +6,9 @@ namespace SUPER_STRING
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string s = "ыпцуп";
+            
+            Console.WriteLine(s.DefLanguage());
         }
     }
 }
