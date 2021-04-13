@@ -11,7 +11,6 @@ namespace SUPER_STRING
     {
         public static string DefLanguage(this string str)
         {
-
             if (Regex.IsMatch(str, "^[a-zA-Z]*$"))
                 str = "ENG";
             else if (Regex.IsMatch(str, "^[а-яА-Я]*$"))
@@ -20,15 +19,6 @@ namespace SUPER_STRING
                 str = "MIX";
             else str = "MIX";
 
-
-            /*            switch (str)
-                        {
-                            case Regex.IsMatch(str, "^[a-zA-Z]*$"):
-                                str = "ENG";
-                                break;
-                            default:
-                                break;
-                        }*/
             return str;
         }
 
