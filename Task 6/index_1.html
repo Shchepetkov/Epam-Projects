@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <link href="style.css" type="text/css" rel="stylesheet">
-  <title>Task 6.1</title>
- </head>
- <body>
+
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<script src="http://www.w3schools.com/lib/w3data.js"></script>
+	<script type="text/javascript" src="/Users/maksimsepetkov/C#/Epam/Task 6/hack.js"></script>
+	<script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+	<title>Task 6.1</title>
+</head>
+
+<body>
+
+	<script>
+		w3IncludeHTML();
+	</script>
+	<div w3-include-html="z.html"></div>
+	<div w3-include-html="nav.html"></div>
+	<div id="mymenu">
+	</div>
+
 	<nav>
-		<ul class="list">
+		<ul class="list" id="ul">
 			<li>Азу по-татарски</li>
 			<li>Зразы</li>
 			<li>Баранья грудинка, тушеная с картофелем</li>
@@ -16,4 +31,5 @@
 		</ul>
 	</nav>
 </body>
+
 </html>
